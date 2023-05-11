@@ -1,13 +1,12 @@
 import scala.beans.BeanProperty
 
 object GetterSetter extends App {
+
   class Point {
     private var _x = 0
     private val bound = 100
 
-
     def x: Int = _x
-
     /**    metodo _=
      *
      *     Cuando se declara una variable mutable o una propiedad en una clase en Scala,
