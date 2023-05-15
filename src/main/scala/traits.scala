@@ -2,10 +2,16 @@ import scala.math.Fractional.Implicits.infixFractionalOps
 import scala.math.Integral.Implicits.infixIntegralOps
 import scala.math.Numeric.Implicits.infixNumericOps
 
+/**
+ * Traits are used to share interfaces and fields between classes.
+ * Classes and objects can extend traits, but traits cannot be instantiated and therefore have no parameters.
+ */
 trait Greeter {
   def greet(name:String): Unit =
     println("hello, "+ name+ "!")
 }
+
+
 object traits extends App {
 
   class DefaultGreeter extends Greeter {
