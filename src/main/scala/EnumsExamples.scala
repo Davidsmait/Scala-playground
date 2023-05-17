@@ -15,12 +15,13 @@ object EnumsExamples {
     case EstadoRopa.usado =>  println(s"el/la ${prenda.tipo} su estado es usado")
     case EstadoRopa.gastado =>  println(s"el/la ${prenda.tipo} su estado es gastado")
 
-
   def main(args: Array[String]): Unit = {
 
     verificadorDeDesgaste(pantalon)
     verificadorDeDesgaste(camisa)
     verificadorDeDesgaste(sudadera)
+    println(EstadoRopa.values.mkString("Array(", ", ", ")"))
+    println(EstadoRopa.valueOf("nuevo"))
   }
 
 }
